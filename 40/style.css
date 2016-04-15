@@ -5,6 +5,12 @@
 li{
 	list-style: none;
 }
+.date{
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #999
+}
 .fl{
 	float: left;
 }
@@ -14,6 +20,7 @@ li{
 .cal{
 	width: 200px;
 	height: 200px;
+	margin-top: 20px;
 	border: 1px solid #F57C7C;
 }
 .cal_head{
@@ -29,7 +36,8 @@ li{
 	
 }
 .cal_mon_pre:hover,.cal_mon_next:hover{
-	background: #FFB7B7
+	background: #FFB7B7;
+	color: #fff
 }
 .cal_week li,.cal_day li{
 	text-align: center;

@@ -6,15 +6,16 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div id="date" class="date"></div>	
 	<div class="cal">
 		<div class="cal_head">
 			<span class="cal_mon_pre fl"><</span>
-			<select>
+			<select id="cal_year">
 				<option>2016</option>
 				<option>2015</option>
 				<option>2014</option>
 			</select>
-			<select>
+			<select id="cal_mon">
 				<option>4</option>
 				<option>3</option>
 				<option>2</option>				
@@ -31,7 +32,7 @@
 				<li>五</li>
 				<li>六</li>
 			</ul>
-			<ul class="cal_day">
+			<ul class="cal_day" id="cal_day">
 				<li>1</li>
 				<li>1</li>
 				<li>1</li>
@@ -72,4 +73,21 @@
 	</div>
 </body>
 <script type="text/javascript" src="cal.js"></script>
+<script type="text/javascript">
+(function () {
+	var cal_year = document.getElementById('cal_year');
+	var cal_mon = document.getElementById('cal_mon');
+	var cal_day = document.getElementById('cal_day');
+	var input = document.getElementById('date');
+
+	var ele = {
+		'year': cal_year,
+		'mon': cal_mon,
+		'day': cal_day,
+		'input': input
+	}
+	cal(ele);
+	
+})()
+</script>
 </html>
