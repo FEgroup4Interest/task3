@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0
+}
+li{
+	list-style: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.cal{
+	width: 200px;
+	height: 200px;
+	border: 1px solid #F57C7C;
+}
+.cal_head{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.cal_mon_pre,.cal_mon_next{
+	display: inline-block;
+	width: 20px;
+	cursor: pointer;
+	transition: .4s
+	
+}
+.cal_mon_pre:hover,.cal_mon_next:hover{
+	background: #FFB7B7
+}
+.cal_week li,.cal_day li{
+	text-align: center;
+	width: 20px;
+	height: 25px;
+	line-height: 25px;
+	display: inline-block;
+}
+.cal_day li{
+	cursor: pointer;
+	transition: .4s
+}
+.cal_day li:hover{
+	background: #FFB7B7
+}
